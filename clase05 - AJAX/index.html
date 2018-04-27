@@ -14,6 +14,18 @@
         <label for="lblPass">Pass</label><br>
         <input type="text" name="pass" id="idPass"><br>
         <input type="button" value="Enviar" onclick="Ajax.Validacion()">
+        <br><br><br>        
+        <input type="text" name="traerNombre" id="traerNombre">
+        <input type="button" value="Todos" onclick="Ajax.TraerTodos()">
+        <input type="button" value="xNombre" onclick="Ajax.TraerxNombre()">
+        <input type="button" value="_Arg" onclick="Ajax.TraerArg()">
+        <table>
+            <tr>
+                <td><div id="Todos"></div></td>
+                <td><div id="xNombre"></div></td>
+                <td><div id="Argentina"></div></td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
