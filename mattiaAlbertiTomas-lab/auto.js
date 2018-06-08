@@ -1,0 +1,19 @@
+/// <reference path="./interface.ts" />
+var Clases;
+(function (Clases) {
+    var Auto = /** @class */ (function () {
+        function Auto(patente, marca, precio) {
+            this._marca = marca;
+            this._patente = patente;
+            this._precio = precio;
+        }
+        Auto.prototype.ToJson = function () {
+            return JSON.parse('{"patente":"' + this._patente + '","marca":"' + this._marca + '","precio":' + this._precio + '}');
+        };
+        Auto.prototype.GetPrecioConIva = function () {
+            return this._precio * 1.21;
+        };
+        return Auto;
+    }());
+    Clases.Auto = Auto;
+})(Clases || (Clases = {}));
